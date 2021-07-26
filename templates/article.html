@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{data.title}}
+{% endblock %}
+
+{% block content %}
+
+    <div class="container-fluid">
+        <span class="navigation">
+            <a href="/">Главная</a> > <a href="/category/{{data.get_slug_for_url()}}">{{data.get_category()}}</a> > <a href="/blog/{{data.slug}}">{{data.title}}</a>
+        </span>
+        <div class="container-article">
+            <div class="title-article">
+                <h4>{{data.title}}</h4>
+            </div>
+            <div class="img-article-bl">
+                <img src="{{url_for('static', filename=data.img)}}" alt="{{data.title}}" class="img-article">
+            </div>
+            <div class="content-article">
+                
+                    {{data.content|safe}}
+                
+                
+            </div>
+        </div>
+    </div>
+    <div class="nav-rigth">
+        {% include "nav.html"%}
+    </div>
+{% endblock %}

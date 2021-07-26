@@ -1,0 +1,587 @@
+*{
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+    border: 0;
+    overflow-x: hidden;
+}
+
+
+header{
+    background-color: black;
+    position: relative;
+}
+
+header > img{
+    margin-top: -50px;
+    height: 300px;
+}
+
+.short{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+}
+
+.logo{
+    position: absolute;
+    z-index: 200;
+    margin: 80px 50px;
+}
+
+.logo > h1{
+    color: white;
+}
+
+.logo > h4{
+    color: white;
+}
+
+
+.row{
+    width: 100%;
+}
+
+footer{
+    height: 100px;
+    background-color: black;
+}
+
+.version{
+    padding-top: 40px;
+    text-align: center;
+}
+
+.version > p{
+    color: white;
+}
+
+.content{
+    padding: 100px 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-rigth{
+    width: 20%;
+    padding-left: 40px;
+}
+
+.container-fluid{
+    width: 75%;
+
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.container-article{
+    width: 80%;
+    padding: 20px 50px 0px 0px;
+    
+}
+
+.title-article{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.title-article > h4{
+    height: 100px;
+}
+
+.img-article-bl{
+    text-align: center;
+}
+
+.img-article{
+    width: 70%;
+    padding: 0px 0px 40px 0px;
+}
+
+.content-article > p{
+    color: gray;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.content-article ul > li {
+    list-style: inside !important;
+    font-size: 17px;
+    padding-bottom: 20px;
+    color: #535353;
+}
+
+.container-article  h5{
+    overflow-y: hidden  ;
+}
+
+th{
+    width: auto;
+}
+
+
+
+.navigation > a{
+    font-size: 14px;
+    color: gray;
+    text-decoration: none;
+}
+
+.navigation > a:hover{
+    text-decoration: underline;
+}
+
+.badge{
+    width: auto !important;
+}
+
+.nav-bl span > a{
+    text-decoration: none;
+    color: white;
+}
+
+.link-dark{
+    color: black;
+}
+
+@font-face {
+    font-family: 'Roboto';
+   /* src: local('Roboto'), local('Roboto-Regular'), url('https://bootstraptema.ru/snippets/font/2016/roboto/roboto.woff2') format('woff2'), url('https://bootstraptema.ru/snippets/font/2016/roboto/roboto.woff') format('woff'), url('https://bootstraptema.ru/snippets/font/2016/roboto/roboto.ttf') format('truetype');*/ 
+   font-weight: 400;
+    font-style: normal;
+   }
+   .blog_box h3{
+    font: 300 17px/22px Roboto, sans-serif; 
+    text-transform:uppercase;
+    margin-top:1em;
+   }
+   .blog_box h3 a{
+    color:#000;
+   }
+   .blog_box h3 a:hover{
+    color: #4C4C4C;
+    text-decoration:none;
+   }
+   .blog_box p{
+    font: 300 16px/25px Roboto, sans-serif; 
+    color:#999;
+    line-height:1.8em;
+    margin-bottom: 2em;
+   }
+   .blog_box{
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+   }
+   .links{
+    padding:0.5em 0;
+   }
+   .links ul{
+    padding:0;
+    list-style:none;
+    
+   }
+   .links li{
+    padding:0;
+    list-style:none;
+   }
+   .links ul li {
+    display: inline-block;
+    margin-right: 0px;
+    font: 300 16px/25px Roboto, sans-serif; 
+    color:#999;
+   }
+   i.blog-icon{
+    color:#2cb149;
+    margin-right: 10px;
+   }
+   
+   a.mask {
+    text-decoration: none;
+    overflow: hidden;
+    display: block;
+   }
+   img.zoom-img:hover {
+    -webkit-transform: scale(1.15);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 750ms;
+    -moz-transform: scale(1.15);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 750ms;
+    overflow: hidden;
+   }
+   img.zoom-img {
+    -webkit-transform: scale(1, 1);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1, 1);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+   }
+
+
+
+@media only screen and (max-width: 1100px) and (min-width: 1000px){
+    header > img{
+        height: 250px;
+    }
+
+
+    .content{
+        padding: 80px 28px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .blog_box h3{
+        font: 300 15px/20px Roboto, sans-serif; 
+        text-transform:uppercase;
+        margin-top:1em;
+       }
+
+       .container-article{
+        width: 85%;
+        padding: 20px 20px 0px 0px;
+        
+    }
+    
+    .title-article{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    
+    .title-article > h4{
+        height: 100px;
+    }
+    
+    .img-article-bl{
+        text-align: center;
+    }
+    
+    .img-article{
+        width: 70%;
+        padding: 0px 0px 40px 0px;
+    }
+    
+    .content-article > p{
+        color: gray;
+        font-size: 19px;
+        font-weight: 400;
+    }
+    
+    .content-article ul > li {
+        list-style: inside !important;
+        font-size: 17px;
+        padding-bottom: 20px;
+        color: #535353;
+    }
+    
+    .container-article  h5{
+        overflow-y: hidden  ;
+    }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 900px){
+    header > img{
+        height: 200px;
+        margin-top: -30px;
+    }
+
+    .nav-rigth{
+        display: none;
+    }
+
+    .blog_box h3{
+        font: 300 13px/18px Roboto, sans-serif; 
+        text-transform:uppercase;
+        margin-top:1em;
+       }
+
+       .container-article{
+        width: 100%;
+        padding: 20px 50px 0px 0px;
+        
+    }
+    
+    .title-article{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    
+    .title-article > h4{
+        height: 100px;
+    }
+    
+    .img-article-bl{
+        text-align: center;
+    }
+    
+    .img-article{
+        width: 70%;
+        padding: 0px 0px 40px 0px;
+    }
+    
+    .content-article > p{
+        color: gray;
+        font-size: 19px;
+        font-weight: 400;
+    }
+    
+    .content-article ul > li {
+        list-style: inside !important;
+        font-size: 17px;
+        padding-bottom: 20px;
+        color: #535353;
+    }
+    
+    .container-article  h5{
+        overflow-y: hidden  ;
+    }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 770px){
+    header > img{
+        height: 170px;
+        margin-top: -30px;
+    }
+
+    .nav-rigth{
+        display: none;
+    }
+
+    .logo{
+        position: absolute;
+        z-index: 200;
+        margin: 20px 50px;
+    }
+    
+    .logo > h1{
+        font-size: 25px;
+        color: white;
+    }
+    
+    .logo > h4{
+        font-size: 20px;
+        color: white;
+    }
+
+    .blog_box h3{
+        font: 300 12px/17px Roboto, sans-serif; 
+        text-transform:uppercase;
+        margin-top:1em;
+       }
+
+       .content{
+        padding: 30px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 1000px){
+    header > img{
+        height: 250px;
+    }
+
+
+    .content{
+        padding: 80px 28px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .blog_box h3{
+        font: 300 15px/20px Roboto, sans-serif; 
+        text-transform:uppercase;
+        margin-top:1em;
+       }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 900px){
+    header > img{
+        height: 200px;
+        margin-top: -30px;
+    }
+
+    .nav-rigth{
+        display: none;
+    }
+
+    .blog_box h3{
+        font: 300 13px/18px Roboto, sans-serif; 
+        text-transform:uppercase;
+        margin-top:1em;
+       }
+}
+
+@media only screen and (max-width: 770px) and (min-width: 650px){
+    header > img{
+        height: 150px;
+        margin-top: -0px;
+    }
+
+    .nav-rigth{
+        display: none;
+    }
+
+    .logo{
+        position: absolute;
+        z-index: 200;
+        margin: 20px 50px;
+    }
+    
+    .logo > h1{
+        font-size: 25px;
+        color: white;
+    }
+    
+    .logo > h4{
+        font-size: 20px;
+        color: white;
+    }
+
+    .blog_box h3{
+        font: 300 15px/20px Roboto, sans-serif; 
+        text-transform:uppercase;
+        margin-top:1em;
+       }
+
+       .content{
+        padding: 30px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 650px) and (min-width: 550px){
+    header > img{
+        height: 130px;
+        margin-top: -0px;
+    }
+
+    .nav-rigth{
+        display: none;
+    }
+
+    .logo{
+        position: absolute;
+        z-index: 200;
+        margin: 20px 50px;
+    }
+    
+    .logo > h1{
+        font-size: 25px;
+        color: white;
+    }
+    
+    .logo > h4{
+        font-size: 20px;
+        color: white;
+    }
+
+    .blog_box h3{
+        font: 300 15px/20px Roboto, sans-serif; 
+        text-transform:uppercase;
+        margin-top:1em;
+       }
+
+       .content{
+        padding: 30px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 550px) and (min-width: 450px){
+    header > img{
+        height: 110px;
+        margin-top: -0px;
+    }
+
+    .nav-rigth{
+        display: none;
+    }
+
+    .logo{
+        position: absolute;
+        z-index: 200;
+        margin: 20px 50px;
+    }
+    
+    .logo > h1{
+        font-size: 25px;
+        color: white;
+    }
+    
+    .logo > h4{
+        font-size: 20px;
+        color: white;
+    }
+
+    .blog_box h3{
+        font: 300 15px/20px Roboto, sans-serif; 
+        text-transform:uppercase;
+        margin-top:1em;
+       }
+
+       .content{
+        padding: 30px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 450px) and (min-width: 350px){
+
+    header > img{
+        
+        height: 100px;
+        margin-top: -0px;
+    }
+
+    .nav-rigth{
+        display: none;
+    }
+
+    .logo{
+        position: absolute;
+        z-index: 200;
+        margin: 20px 50px;
+    }
+    
+    .logo > h1{
+        font-size: 25px;
+        color: white;
+    }
+    
+    .logo > h4{
+        font-size: 20px;
+        color: white;
+    }
+
+    .blog_box h3{
+        font: 300 12px/17px Roboto, sans-serif; 
+        text-transform:uppercase;
+        margin-top:1em;
+       }
+
+       .content{
+        padding: 30px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .container-fluid{
+        padding: 0;
+        
+    }
+}

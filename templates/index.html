@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block  title %}
+    Главная
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid">
+    {% for items in data %}
+        <div class="row">
+            {% for item in items %}
+            <div class="col-md-4 blog_box">
+                <div class="align-img">
+                    <a href="/blog/{{item.slug}}" class="mask">
+                        <img src="{{ url_for('static', filename=item.img) }}" alt="{{item.title}}" class="img-responsive zoom-img"/>
+                        
+                    </a>
+                </div>
+                <div class="align-bl">
+                    <h3><a href="/blog/{{item.slug}}">{{item.title}}</a></h3>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    {% endfor %}
+    </div>    
+    <div class="nav-rigth">
+        {% include "nav.html"%}
+    </div>
+{% endblock %}

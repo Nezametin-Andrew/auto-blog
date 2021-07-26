@@ -1,0 +1,18 @@
+<div class="nav-bl">
+    {% for cat in range(category[-1])%}
+    <span class="badge rounded-pill  {{category[1][cat]}} ">
+        <a href="/category/{{category[0][cat].slug}}" class="{%if category[1][cat] in category[2]%}text-dark{%endif%}">
+         {{category[0][cat].name}} 
+        </a>
+    </span>
+    <!--
+<span class="badge rounded-pill bg-primary"><a href=""> Primary </a></span>
+<span class="badge rounded-pill bg-secondary"> <a href=""> Secondary</a></span>
+<span class="badge rounded-pill bg-success"> <a href=""> Success</a></span>
+<span class="badge rounded-pill bg-danger"> <a href=""> Danger </a></span>
+<span class="badge rounded-pill bg-warning text-dark"> <a href=""> Warning </a></span>
+<span class="badge rounded-pill bg-info text-dark">Info</span>
+<span class="badge rounded-pill bg-light text-dark">Light</span>
+<span class="badge rounded-pill bg-dark">Dark</span>-->
+        {% endfor %}
+</div>
